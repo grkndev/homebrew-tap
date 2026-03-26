@@ -5,21 +5,21 @@
 class Icleaner < Formula
   desc "Open-source macOS CLI disk cleaner"
   homepage "https://github.com/grkndev/ICleaner"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/grkndev/ICleaner/releases/download/v0.2.0/ICleaner_0.2.0_darwin_amd64.tar.gz"
-      sha256 "5b7185150c60b663785873ab7c541590641229e9b423423e50370a6a8e85604f"
+      url "https://github.com/grkndev/ICleaner/releases/download/v0.3.0/ICleaner_0.3.0_darwin_amd64.tar.gz"
+      sha256 "dfba242717943018ec31453c8a1a4f3ba351e768213adae1de9380815a921292"
 
       define_method(:install) do
         bin.install "icleaner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/grkndev/ICleaner/releases/download/v0.2.0/ICleaner_0.2.0_darwin_arm64.tar.gz"
-      sha256 "c35d76dfbfbda8dab2c2db7533f8fde645e898dc58464547cfb072d0f5609e05"
+      url "https://github.com/grkndev/ICleaner/releases/download/v0.3.0/ICleaner_0.3.0_darwin_arm64.tar.gz"
+      sha256 "9f1d6f147c5fc6c3c868dc261a690c0ce1fe34540f93929314565618d14f2f03"
 
       define_method(:install) do
         bin.install "icleaner"
@@ -29,15 +29,15 @@ class Icleaner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grkndev/ICleaner/releases/download/v0.2.0/ICleaner_0.2.0_linux_amd64.tar.gz"
-      sha256 "1076a025bbbde5120e79078e45cbcad5ee6749d2de6b603dd0b6d3c24b1a3bef"
+      url "https://github.com/grkndev/ICleaner/releases/download/v0.3.0/ICleaner_0.3.0_linux_amd64.tar.gz"
+      sha256 "c0446104b6eb79a89ffc86580c01a7867b8459e968e762cdd4d5620e341f8e78"
       define_method(:install) do
         bin.install "icleaner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grkndev/ICleaner/releases/download/v0.2.0/ICleaner_0.2.0_linux_arm64.tar.gz"
-      sha256 "86ad6213855322b52110dca72b973a39674caefd23aa09a1c9d85bef1991c635"
+      url "https://github.com/grkndev/ICleaner/releases/download/v0.3.0/ICleaner_0.3.0_linux_arm64.tar.gz"
+      sha256 "348816df7968dc18060f9eb423f9438467036545935892cd3d673f15484eecf6"
       define_method(:install) do
         bin.install "icleaner"
       end
